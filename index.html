@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Получение прогноза погоды</title>
+</head>
+<style>
+    * {
+        font-size: 32px;
+    }
+
+    span {
+        color: red;
+        font-size: 32px;
+    }
+
+    img {
+        display: inline-block;
+        margin-top: 1em;
+    }
+
+    .weather-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-container {
+        margin-top: 2em;
+    }
+</style>
+
+<body>
+    <div class="form-container">
+        <label for="cityInput">Введите город:</label>
+        <input type="text" id="cityInput">
+        <button id="submitButton">Прогноз</button>
+    </div>
+
+    <div class="requested-city" style="display: none;">
+        <h1>Прогноз погоды <span id="city"></span></h1>
+        <div class="weather-container">
+            <div id="weather"></div>
+            <img id="img" />
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
